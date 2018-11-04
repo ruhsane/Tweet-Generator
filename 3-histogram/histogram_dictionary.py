@@ -19,4 +19,4 @@ def frequency(word, histogram):
 if __name__ == "__main__":
     print(histogram())
     unique_words(histogram())
-    # frequency("fish", histogram())
+    frequency("fish", histogram())

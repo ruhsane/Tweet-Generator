@@ -1,6 +1,6 @@
 def histogram():
     histogram_dict = {}
-    with open('/Users/ruhsane/dev/courses/cs1.2/tweet-generator/3-histogram/source.txt','r') as f:
+    with open('/Users/ruhsane/dev/courses/cs1.2/tweet-generator/histograms/source.txt','r') as f:
         for line in f:
             for word in line.split():
                 if word in histogram_dict:

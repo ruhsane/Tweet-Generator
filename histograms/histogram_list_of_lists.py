@@ -1,7 +1,7 @@
 def histogram():
     histogram = []
     words = []
-    with open("/Users/ruhsane/dev/courses/cs1.2/tweet-generator/3-histogram/source.txt") as f:
+    with open("/Users/ruhsane/dev/courses/cs1.2/tweet-generator/histograms/source.txt") as f:
         for line in f:
             for word in line.split():
                 words.append(word)

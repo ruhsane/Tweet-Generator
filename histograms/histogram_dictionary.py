@@ -1,12 +1,12 @@
 def histogram():
     histogram_dict = {}
     with open('/Users/ruhsane/dev/courses/cs1.2/tweet-generator/histograms/source.txt','r') as f:
-        for line in f:
-            for word in line.split():
-                if word in histogram_dict:
+        for line in f: #for each line of the file
+            for word in line.split(): #split the words
+                if word in histogram_dict: #if word already saved, add 1 to its frequency
                     histogram_dict[word] += 1
                 else:
-                    histogram_dict[word]=1
+                    histogram_dict[word]=1 #if new word, add to dictionary
     return histogram_dict
 
 def unique_words(histogram):

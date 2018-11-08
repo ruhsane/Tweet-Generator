@@ -15,7 +15,7 @@ def test_pure(histogram):
     #prints how many times each word was chosen when we randomly pick from the words for 1000 times
     #result shows that each word was randomized around 200 times which proves it is purely randomized
     result = {}
-    for i in range(1000):
+    for i in range(10000):
         randomized_word = sample_pure_random(histogram)
         if randomized_word in result:
             result[randomized_word] += 1
